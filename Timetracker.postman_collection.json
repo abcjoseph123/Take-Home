@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "01d4d24b-9435-4093-8d03-c9bb2e79fd57",
+		"name": "Timetracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"duration\": 432,\r\n\t\"description\": \"bugfix\"\r\n\t\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/backend/timetrack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backend",
+						"timetrack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"duration\": 545,\r\n\t\"description\": \"Reading the Manual\"\r\n\t\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/backend/timetrack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backend",
+						"timetrack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"duration\": 7000,\r\n\t\"description\": \"trying to understand what i wrote 20 minutes ago\"\r\n\t\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/backend/timetrack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backend",
+						"timetrack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"duration\": 3600,\r\n\t\"description\": \"finding that one typo\"\r\n\t\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/backend/timetrack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backend",
+						"timetrack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"duration\": 7200,\r\n\t\"description\": \"Updating windows\"\r\n\t\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/backend/timetrack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backend",
+						"timetrack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post 6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"duration\": 2670,\r\n\t\"description\": \"Pipeline is slow today\"\r\n\t\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/backend/timetrack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backend",
+						"timetrack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post 7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"duration\": 1000,\r\n\t\"description\": \"bugfix\"\r\n\t\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/backend/timetrack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backend",
+						"timetrack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search for entrywith description bugfix",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"duration\": 12345,\r\n\t\"description\": \"Fixing minor bugs etc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/backend/timetrack/searchdescr/bugfix",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backend",
+						"timetrack",
+						"searchdescr",
+						"bugfix"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all entrys from DB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/backend/timetrack/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backend",
+						"timetrack",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,47 @@
+version: "3.8"
+services:
+  backend:
+    image: node:13
+    container_name: backend
+    volumes:
+      - ./backend:/backend/:cached
+    working_dir: /backend
+    environment:
+      - API_PORT=8080
+      - DBDATABASE=db_time
+      - DBHOST=db_timeTrack
+      - DBPASSWORD=123456789
+      - DBPORT=3306
+      - DBUSER=Chronos
+      - NODE_ENV=local
+    command: ./run.sh
+    ports:
+      - 8080:8080
+    depends_on:
+      - db_timeTrack
+  db_timeTrack:
+    image: mysql:5.7
+    container_name: db_timeTrack
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --skip-character-set-client-handshake
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456789
+      - MYSQL_DATABASE=db_time
+      - MYSQL_USER=Chronos
+      - MYSQL_PASSWORD=123456789
+    ports:
+      - "3306:3306"
+
+  frontend:
+    image: node:13
+    container_name: frontend
+    command: npm run start
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - "./frontend:/var/frontend"
+    working_dir: /var/frontend
+    ports:
+      - "3000:3000"
